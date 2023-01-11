@@ -11,9 +11,14 @@
 		D1472751296F165B00DC3DFB /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472750296F165B00DC3DFB /* AppView.swift */; };
 		D1472753296F165D00DC3DFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1472752296F165D00DC3DFB /* Assets.xcassets */; };
 		D1472756296F165D00DC3DFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1472755296F165D00DC3DFB /* Preview Assets.xcassets */; };
-		D1472760296F165D00DC3DFB /* HelloDependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147275F296F165D00DC3DFB /* HelloDependenciesTests.swift */; };
+		D1472760296F165D00DC3DFB /* FirstViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147275F296F165D00DC3DFB /* FirstViewModelTests.swift */; };
 		D147276A296F165D00DC3DFB /* HelloDependenciesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472769296F165D00DC3DFB /* HelloDependenciesUITests.swift */; };
 		D147276C296F165D00DC3DFB /* HelloDependenciesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147276B296F165D00DC3DFB /* HelloDependenciesUITestsLaunchTests.swift */; };
+		D147277C296F179F00DC3DFB /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = D147277B296F179F00DC3DFB /* Dependencies */; };
+		D1472780296F192F00DC3DFB /* Timber in Frameworks */ = {isa = PBXBuildFile; productRef = D147277F296F192F00DC3DFB /* Timber */; };
+		D1472783296F194100DC3DFB /* Timber+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472782296F194100DC3DFB /* Timber+Presets.swift */; };
+		D1472785296F1A0B00DC3DFB /* Timber+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472784296F1A0B00DC3DFB /* Timber+Dependencies.swift */; };
+		D1472787296F1B1400DC3DFB /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472786296F1B1400DC3DFB /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +45,13 @@
 		D1472752296F165D00DC3DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1472755296F165D00DC3DFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D147275B296F165D00DC3DFB /* HelloDependenciesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloDependenciesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D147275F296F165D00DC3DFB /* HelloDependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDependenciesTests.swift; sourceTree = "<group>"; };
+		D147275F296F165D00DC3DFB /* FirstViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModelTests.swift; sourceTree = "<group>"; };
 		D1472765296F165D00DC3DFB /* HelloDependenciesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloDependenciesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1472769296F165D00DC3DFB /* HelloDependenciesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDependenciesUITests.swift; sourceTree = "<group>"; };
 		D147276B296F165D00DC3DFB /* HelloDependenciesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDependenciesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1472782296F194100DC3DFB /* Timber+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timber+Presets.swift"; sourceTree = "<group>"; };
+		D1472784296F1A0B00DC3DFB /* Timber+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timber+Dependencies.swift"; sourceTree = "<group>"; };
+		D1472786296F1B1400DC3DFB /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D147277C296F179F00DC3DFB /* Dependencies in Frameworks */,
+				D1472780296F192F00DC3DFB /* Timber in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +122,7 @@
 		D147275E296F165D00DC3DFB /* HelloDependenciesTests */ = {
 			isa = PBXGroup;
 			children = (
-				D147275F296F165D00DC3DFB /* HelloDependenciesTests.swift */,
+				D147275F296F165D00DC3DFB /* FirstViewModelTests.swift */,
 			);
 			path = HelloDependenciesTests;
 			sourceTree = "<group>";
@@ -137,10 +147,29 @@
 		D1472779296F16BB00DC3DFB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D1472781296F193500DC3DFB /* Logging */,
+				D147277D296F189E00DC3DFB /* UI */,
 				D147274E296F165B00DC3DFB /* App.swift */,
 				D1472750296F165B00DC3DFB /* AppView.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D147277D296F189E00DC3DFB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D1472786296F1B1400DC3DFB /* FirstView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D1472781296F193500DC3DFB /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				D1472784296F1A0B00DC3DFB /* Timber+Dependencies.swift */,
+				D1472782296F194100DC3DFB /* Timber+Presets.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +188,10 @@
 			dependencies = (
 			);
 			name = HelloDependencies;
+			packageProductDependencies = (
+				D147277B296F179F00DC3DFB /* Dependencies */,
+				D147277F296F192F00DC3DFB /* Timber */,
+			);
 			productName = HelloDependencies;
 			productReference = D147274B296F165B00DC3DFB /* HelloDependencies.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +264,10 @@
 				Base,
 			);
 			mainGroup = D1472742296F165B00DC3DFB;
+			packageReferences = (
+				D147277A296F179F00DC3DFB /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				D147277E296F192F00DC3DFB /* XCRemoteSwiftPackageReference "timber" */,
+			);
 			productRefGroup = D147274C296F165B00DC3DFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1472751296F165B00DC3DFB /* AppView.swift in Sources */,
+				D1472787296F1B1400DC3DFB /* FirstView.swift in Sources */,
+				D1472785296F1A0B00DC3DFB /* Timber+Dependencies.swift in Sources */,
+				D1472783296F194100DC3DFB /* Timber+Presets.swift in Sources */,
 				D147274F296F165B00DC3DFB /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1472760296F165D00DC3DFB /* HelloDependenciesTests.swift in Sources */,
+				D1472760296F165D00DC3DFB /* FirstViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +633,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D147277A296F179F00DC3DFB /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		D147277E296F192F00DC3DFB /* XCRemoteSwiftPackageReference "timber" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bsrz/timber.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D147277B296F179F00DC3DFB /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D147277A296F179F00DC3DFB /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		D147277F296F192F00DC3DFB /* Timber */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D147277E296F192F00DC3DFB /* XCRemoteSwiftPackageReference "timber" */;
+			productName = Timber;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1472743296F165B00DC3DFB /* Project object */;
 }
