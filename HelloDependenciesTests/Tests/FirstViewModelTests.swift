@@ -7,21 +7,21 @@ final class FirstViewModelTests: XCTestCase {
 
     func testViewModel_whenLogErrorActionIsSent_logsErrorMessage() throws {
         var messages: [Message] = []
-        let viewModel = withDependencies {
+        let destination = Destination.makeTestDestination { message, _ in
+            messages.append(message)
+        }
+
+        let sut = withDependencies {
             $0.logger = .init(
                 config: .init(
-                    destinations: [
-                        .init(send: { message, _, _ in
-                            messages.append(message)
-                        })
-                    ]
+                    destinations: [destination]
                 )
             )
         } operation: {
             FirstViewModel()
         }
 
-        viewModel.send(.logError)
+        sut.send(.logError)
 
         XCTAssertEqual(messages.count, 1)
         let message = try XCTUnwrap(messages.first)
