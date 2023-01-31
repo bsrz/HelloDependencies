@@ -17,11 +17,12 @@
 		D147277C296F179F00DC3DFB /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = D147277B296F179F00DC3DFB /* Dependencies */; };
 		D1472780296F192F00DC3DFB /* Timber in Frameworks */ = {isa = PBXBuildFile; productRef = D147277F296F192F00DC3DFB /* Timber */; };
 		D1472783296F194100DC3DFB /* Timber+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472782296F194100DC3DFB /* Timber+Presets.swift */; };
-		D1472785296F1A0B00DC3DFB /* Timber+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472784296F1A0B00DC3DFB /* Timber+Dependencies.swift */; };
 		D1472787296F1B1400DC3DFB /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1472786296F1B1400DC3DFB /* FirstView.swift */; };
+		D1C533D7298974D000942CE2 /* ProfileRepository+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C533D4298974D000942CE2 /* ProfileRepository+Dependencies.swift */; };
+		D1C533D8298974D000942CE2 /* UUID+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C533D5298974D000942CE2 /* UUID+Dependencies.swift */; };
+		D1C533D9298974D000942CE2 /* Timber+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C533D6298974D000942CE2 /* Timber+Dependencies.swift */; };
 		D1D8AF2A2970A4F200792F87 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8AF292970A4F200792F87 /* FirstViewModel.swift */; };
 		D1D8AF2D2970A53700792F87 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8AF2C2970A53700792F87 /* ProfileRepository.swift */; };
-		D1D8AF2F2970A8A000792F87 /* ProfileRepository+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8AF2E2970A8A000792F87 /* ProfileRepository+Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +54,12 @@
 		D1472769296F165D00DC3DFB /* HelloDependenciesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDependenciesUITests.swift; sourceTree = "<group>"; };
 		D147276B296F165D00DC3DFB /* HelloDependenciesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDependenciesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D1472782296F194100DC3DFB /* Timber+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timber+Presets.swift"; sourceTree = "<group>"; };
-		D1472784296F1A0B00DC3DFB /* Timber+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timber+Dependencies.swift"; sourceTree = "<group>"; };
 		D1472786296F1B1400DC3DFB /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		D1C533D4298974D000942CE2 /* ProfileRepository+Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileRepository+Dependencies.swift"; sourceTree = "<group>"; };
+		D1C533D5298974D000942CE2 /* UUID+Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+Dependencies.swift"; sourceTree = "<group>"; };
+		D1C533D6298974D000942CE2 /* Timber+Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timber+Dependencies.swift"; sourceTree = "<group>"; };
 		D1D8AF292970A4F200792F87 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 		D1D8AF2C2970A53700792F87 /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
-		D1D8AF2E2970A8A000792F87 /* ProfileRepository+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileRepository+Dependencies.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		D1472779296F16BB00DC3DFB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D1C533D3298974D000942CE2 /* Dependencies */,
 				D1472781296F193500DC3DFB /* Logging */,
 				D1D8AF2B2970A51E00792F87 /* Repositories */,
 				D147277D296F189E00DC3DFB /* UI */,
@@ -174,17 +177,25 @@
 		D1472781296F193500DC3DFB /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				D1472784296F1A0B00DC3DFB /* Timber+Dependencies.swift */,
 				D1472782296F194100DC3DFB /* Timber+Presets.swift */,
 			);
 			path = Logging;
+			sourceTree = "<group>";
+		};
+		D1C533D3298974D000942CE2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D1C533D4298974D000942CE2 /* ProfileRepository+Dependencies.swift */,
+				D1C533D6298974D000942CE2 /* Timber+Dependencies.swift */,
+				D1C533D5298974D000942CE2 /* UUID+Dependencies.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		D1D8AF2B2970A51E00792F87 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				D1D8AF2C2970A53700792F87 /* ProfileRepository.swift */,
-				D1D8AF2E2970A8A000792F87 /* ProfileRepository+Dependencies.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -328,13 +339,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1472751296F165B00DC3DFB /* AppView.swift in Sources */,
+				D1C533D7298974D000942CE2 /* ProfileRepository+Dependencies.swift in Sources */,
 				D1D8AF2A2970A4F200792F87 /* FirstViewModel.swift in Sources */,
-				D1D8AF2F2970A8A000792F87 /* ProfileRepository+Dependencies.swift in Sources */,
+				D1C533D8298974D000942CE2 /* UUID+Dependencies.swift in Sources */,
 				D1D8AF2D2970A53700792F87 /* ProfileRepository.swift in Sources */,
 				D1472787296F1B1400DC3DFB /* FirstView.swift in Sources */,
-				D1472785296F1A0B00DC3DFB /* Timber+Dependencies.swift in Sources */,
 				D1472783296F194100DC3DFB /* Timber+Presets.swift in Sources */,
 				D147274F296F165B00DC3DFB /* App.swift in Sources */,
+				D1C533D9298974D000942CE2 /* Timber+Dependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
