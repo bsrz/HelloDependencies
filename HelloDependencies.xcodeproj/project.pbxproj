@@ -16,6 +16,8 @@
 		D190FA7B29F2EB6700FF7532 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = D190FA7A29F2EB6700FF7532 /* Logging */; };
 		D190FA7D29F2EB6700FF7532 /* Tracking in Frameworks */ = {isa = PBXBuildFile; productRef = D190FA7C29F2EB6700FF7532 /* Tracking */; };
 		D190FA7F29F2EDE200FF7532 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190FA7E29F2EDE200FF7532 /* HomeView.swift */; };
+		D190FA8129F2F23200FF7532 /* ProfileData in Frameworks */ = {isa = PBXBuildFile; productRef = D190FA8029F2F23200FF7532 /* ProfileData */; };
+		D190FA8329F2F23200FF7532 /* ProfileDomain in Frameworks */ = {isa = PBXBuildFile; productRef = D190FA8229F2F23200FF7532 /* ProfileDomain */; };
 		D1C533DB298976AB00942CE2 /* Timber+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C533DA298976AB00942CE2 /* Timber+Testing.swift */; };
 		D1C533DE2989788B00942CE2 /* ProfileRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C533DD2989788B00942CE2 /* ProfileRepositoryTests.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D190FA7B29F2EB6700FF7532 /* Logging in Frameworks */,
+				D190FA8129F2F23200FF7532 /* ProfileData in Frameworks */,
+				D190FA8329F2F23200FF7532 /* ProfileDomain in Frameworks */,
 				D190FA7D29F2EB6700FF7532 /* Tracking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +194,8 @@
 			packageProductDependencies = (
 				D190FA7A29F2EB6700FF7532 /* Logging */,
 				D190FA7C29F2EB6700FF7532 /* Tracking */,
+				D190FA8029F2F23200FF7532 /* ProfileData */,
+				D190FA8229F2F23200FF7532 /* ProfileDomain */,
 			);
 			productName = HelloDependencies;
 			productReference = D147274B296F165B00DC3DFB /* HelloDependencies.app */;
@@ -636,6 +642,14 @@
 		D190FA7C29F2EB6700FF7532 /* Tracking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Tracking;
+		};
+		D190FA8029F2F23200FF7532 /* ProfileData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfileData;
+		};
+		D190FA8229F2F23200FF7532 /* ProfileDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfileDomain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
