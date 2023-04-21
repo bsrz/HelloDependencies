@@ -2,12 +2,11 @@ import Dependencies
 import Timber
 
 private enum LoggerDependencyKey: DependencyKey {
-    static let liveValue: Logger = .hello
-    static let previewValue: Logger = .init(config: .init(destinations: []))
+    static let liveValue: Logger = .timber
 }
 
 extension DependencyValues {
-    var logger: Logger {
+    public var logger: Logger {
         get { self[LoggerDependencyKey.self] }
         set { self[LoggerDependencyKey.self] = newValue }
     }

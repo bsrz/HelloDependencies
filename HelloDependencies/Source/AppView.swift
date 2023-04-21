@@ -2,15 +2,7 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        TabView {
-            FirstView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "swift")
-                        Text("First")
-                    }
-                }
-        }
+        HomeView()
     }
 }
 
